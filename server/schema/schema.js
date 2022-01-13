@@ -7,7 +7,17 @@ const BookType = new GraphQLObjectType({
     fields: () => ({
         id: { type: GraphQLString },
         name: { type: graphQLString },
-        genres: { type: GraphQLString}
+        genres: { type: GraphQLString }
 
     })
+});
+
+const RootQuery = new GraphQLObjectType({
+    name: 'RootQueryType',
+    fields: {
+        book: {
+            type: BookType,
+            args:{id: {type: GraphQLString}}
+        }
+    }
 })
