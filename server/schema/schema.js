@@ -19,8 +19,8 @@ let books = [
 
 let authors = [
   { name: "Patrick Rothfuss", age: 21, id: "1" },
-  { name: "Brandon Sanderson", age: 43, id: "2" },
-  { name: "Terry Pratchett", age: 65, id: "3" },
+  { name: "Brandon Sanderson", age: 40, id: "2" },
+  { name: "Terry Pratchett", age: 61, id: "3" },
 ];
 
 const BookType = new GraphQLObjectType({
